@@ -1,23 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author chiam
- */
 import java.util.Random;
 
-public class l4q6 {
+public class lab4q6 {
 
     public static void main(String[] args) {
+
+        // 1. Generate a random integer
         Random rand = new Random();
-        
         int randomNum = rand.nextInt(Integer.MAX_VALUE);
 
+        // 2. Count the number of digits
         int digitCount = String.valueOf(randomNum).length();
-        
+
+        // 3. Display the results
         System.out.println("Generated number: " + randomNum);
         System.out.println("Number of digits: " + digitCount);
     }
